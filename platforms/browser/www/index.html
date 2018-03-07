@@ -1,0 +1,192 @@
+  
+<!DOCTYPE html>
+<html >
+<meta charset="utf-8">
+<head>
+
+      <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/material.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+ 
+</head>
+<style>
+.mdl-layout__drawer { margin:0px; padding: 0px; }
+.mdl-layout__content { padding:0px; background-color: white;}
+.mdl-list__item { border-bottom: 1px solid #DDD; cursor: pointer; }
+.mdl-layout-title { background-color: #00468C; background-image: url("images/cabecera_menu.jpg"); background-size: 100%; background-repeat: no-repeat; text-align: center; padding: 0px; margin:0px;  }
+.mdl-layout-title img { text-align: center; }
+#logo { width: 66px; height: 93px;  margin: 15px auto;  }
+.mdl-layout-title { color: white; text-align: left; }
+.titulo_menu { background-color:#2196F3; width: 100%; padding: 20px; color: white; font-size: 18px;  }
+</style>
+<!-- define angular controller -->
+<script>
+  var monkeyList = new List('test-list', { 
+  valueNames: ['name']
+});
+</script>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">      
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">
+      <div id="logo"><img src="images/jalisco.png" alt=""></div>
+    </span>
+    <div class="titulo_menu">Leyes Jalisco</div>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="index.html"><i class="material-icons">gavel</i>Leyes Federales</a>
+       
+    </nav>
+    <nav class="mdl-navigation">
+       <a class="mdl-navigation__link" href="acercade.html"><i class="material-icons">info</i>Acerca de</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  <div class="page-content">
+    <div id="test-list">
+    <input type="text" class="fuzzy-search" />
+    <ul class="list">
+      <li>
+        <div class="mdl-list__item" onclick="location.href='codigocivil.html'">
+        <span class="mdl-list__item-primary-content">
+          <span class="name">CONSTITUCIÓN Política de los Estados Unidos Mexicanos</span>
+        </span>
+        <button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button>
+      </div>
+      </li>
+      <li>
+        <div class="mdl-list__item" onclick="location.href='codigocivil.html'">
+        <span class="mdl-list__item-primary-content">
+          <span class="name">Ley de amparo</span>
+        </span>
+        <button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button>
+      </div>
+      </li>
+      <li>
+        <div class="mdl-list__item" onclick="location.href='codigocivil.html'">
+        <span class="mdl-list__item-primary-content">
+          <span class="name">Ley de propiedad intelectual</span>
+        </span>
+        <button class="mdl-button mdl-button--icon mdl-button--colored">
+          <img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt="">
+        </button>
+      </div>
+      </li>
+    </ul>
+  </div>
+<div class="demo-list-action mdl-list">
+    
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">CÓDIGO Civil Federal</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="codigocivil.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">CÓDIGO de Comercio</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="codigodecomercio.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">CÓDIGO Federal de Procedimientos Civiles</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="codigodeprocedimientosciviles.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">CÓDIGO Nacional de Procedimientos Penales</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="codigodeprocedimientospenales.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">CÓDIGO Penal Federal</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="codigopenal.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY de Amparo</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leydeamparo.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY Federal del Trabajo</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leydetrabajo.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY Aduanera</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leyaduanera.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY de la Propiedad Industrial</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leydepropiedadindustrial.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY Federal del Derecho de Autor</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leyderechodeautor.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY Federal del Procedimiento Administrativo</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leyprocedimientoadministrativo.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+  <div class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <span class="listado">LEY Federal del Procedimiento Contencioso Administrativo</span>
+    </span>
+    <a class="mdl-list__item-secondary-action" href="#"><button class="mdl-button mdl-button--icon mdl-button--colored">
+          <a href="leyprocedimientocontenciosoadministrativo.html"><img src="images/icons/ic_play_circle_filled_black_24dp_1x.png" alt=""></a>
+        </button></a>
+  </div>
+</div>      
+    </div>
+
+  </main>
+</body>
+
+</html>
